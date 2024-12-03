@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f7f7f7;
+    
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: black;
+    text-shadow: 0 0 7px #fff,
+    0 0 10px #e41111,
+    0 0 151px rgb(255, 0, 0);
+    font-size: large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+    word-spacing: 5px;    
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-top: 10px;
+  }
+  
+  input, select, button {
+    margin-top: 5px;
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  button {
+    margin-top: 20px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #0056b3;
+    transition: 0.3s ease-in-out;
+  }
+   

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Anketa</title>
+</head>
+<body>
+           
+    <div class="container">
+        <h1>Duomenų užpildymas</h1>
+        <form id="anketa">
+          <label for="lytis">Lytis:</label>
+          <select id="lytis" name="lytis">
+            <option value="vyras">Vyras</option>
+            <option value="moteris">Moteris</option>
+          </select>
+    
+          <label for="vardas">Vardas:</label>
+          <input type="text" id="vardas" name="vardas" required>
+    
+          <label for="pavarde">Pavardė:</label>
+          <input type="text" id="pavarde" name="pavarde" required>
+    
+          <label for="gimimo-data">Gimimo data:</label>
+          <input type="date" id="gimimo-data" name="gimimo-data" required>
+    
+          <label for="asmens-kodas">Asmens kodas:</label>
+          <input type="text" id="asmens-kodas" name="asmens-kodas" readonly>
+    
+          <label for="issilavinimas">Išsilavinimas:</label>
+          <select id="issilavinimas" name="issilavinimas">
+            <option value="pagrindinis">Pagrindinis</option>
+            <option value="vidurinis">Vidurinis</option>
+            <option value="profesinis">Profesinis</option>
+            <option value="aukstasis-kolegijinis">Aukštasis kolegijinis</option>
+            <option value="aukstasis-universitetinis">Aukštasis universitetinis</option>
+          </select>
+    
+          <label for="telefonas">Telefono numeris:</label>
+          <input type="tel" id="telefonas" name="telefonas" required pattern="^\+?\d+$" placeholder="+370">
+    
+          <label for="elpastas">El. paštas:</label>
+          <input type="email" id="elpastas" name="elpastas" required>
+    
+          <label for="adresas">Gyvenamoji vieta:</label>
+          <input type="text" id="adresas" name="adresas" required>
+    
+          <label for="padetis">Vedybinė padėtis:</label>
+          <select id="padetis" name="padetis">
+            <option value="nevedes">Nevedęs / Netekėjusi</option>
+            <option value="vedes">Vedęs / Ištekėjusi</option>
+            <option value="issiskyres">Išsiskyręs(-usi)</option>
+          </select>
+    
+          <div id="sutuoktinis-laukai" style="display: none;">
+            <label for="sutuoktinio-vardas">Sutuoktinio vardas:</label>
+            <input type="text" id="sutuoktinio-vardas" name="sutuoktinio-vardas">
+            <br>
+            <label for="sutuoktinio-pavarde">Sutuoktinio pavardė:</label>
+            <input type="text" id="sutuoktinio-pavarde" name="sutuoktinio-pavarde">
+          </div>
+    
+          <label for="profesine-padetis">Profesinė padėtis:</label>
+          <select id="profesine-padetis" name="profesine-padetis">
+            <option value="studijuoja">Studijuoja</option>
+            <option value="dirba">Dirba</option>
+            <option value="nedirba">Nedirba</option>
+            <option value="atostogose">Motinystės / Tėvystės atostogose</option>
+          </select>
+    
+          <button type="submit">Pateikti</button>
+        </form>
+      </div>
+    <script src="script.js"></script>
+</body>
+</html>
